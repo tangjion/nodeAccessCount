@@ -16,7 +16,7 @@ app.get("/", function(req, res) {
     if (!countNum) {
       countNum = 1;
     } else {
-      countNum = parseInt(countNum) + 1 + "asdfads";
+      countNum = parseInt(countNum) + 1 + "new";
     }
     redisClient.set("access_count", countNum, function(err) {
       if (err) {
